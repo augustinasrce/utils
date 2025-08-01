@@ -21,4 +21,3 @@ const wait = (f) => {
     return new Promise(resolve => setTimeout(() => resolve(f()), delay))
 }
 
-export { wait, waitForElementToExist }
