@@ -16,8 +16,8 @@ const waitForElementToExist = (selector) => {
     })
 }
 
-const wait = (f) => {
+const wait = () => {
     const delay = 400 + Math.floor(Math.random() * 600)
-    return new Promise(resolve => setTimeout(() => resolve(f()), delay))
+    return new Promise(resolve => { setTimeout(() => resolve(true) }, delay))
 }
 
